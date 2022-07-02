@@ -1,6 +1,13 @@
-let button = document.querySelector("#button");document.querySelector("#button").addEventListener("click", () => {
-
-    document.querySelector('p .total').innerHTML = document.querySelector("#price").value*document.querySelector('#var-1').value;
-    document.querySelector('p .cantidad').innerHTML = document.querySelector('#variable1').value;
-    document.querySelector('p .color_laptopt').style.color = document.querySelector('#variable2').value;
-})
+let btnCalcular = document.querySelector("#get-total");
+btnCalcular.addEventListener("click", () => {
+  let inputCantidad = document.querySelector("#cantidad").value;
+  let txtmonto = document.querySelector("#monto");
+  txtmonto.innerHTML = inputCantidad;
+  /*color*/
+  let colors = document.querySelector("#colors").value;
+  document.querySelector("#selectedColor");
+  document.getElementById("coloruser").style.color = colors;
+  let selectPrice = document.querySelector("#price").value;
+  let txtTotal = document.querySelector("#total");
+  txtTotal.innerHTML = selectPrice * inputCantidad;
+});

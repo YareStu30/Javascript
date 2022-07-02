@@ -19,13 +19,13 @@
           alt="imagen con fondo verde con un aguila de ojos rojos"
         />
         <h1>Laptop Gamer AMD</h1>
-        <input type="text" id="variable1" placeholder="Cantidad" />
-        <select id="variable2" placeholder="color">
-          <option value="blue"></option>
-          <option value="purple"></option>
-          <option value="gold"></option>
-          <option value="orange"></option>
-          <option value="lightblue"></option>
+        <input type="text" id="cantidad" placeholder="Cantidad" value="1" />
+        <select id="colors" placeholder="color">
+          <option value="blue">Azul</option>
+          <option value="purple">Morado</option>
+          <option value="gold">Dorado</option>
+          <option value="orange">Naranja</option>
+          <option value="green">Verde</option>
         </select>
         <select id="price">
           <option value="10000">Price: 10000</option>
@@ -40,7 +40,10 @@
         <section id="totalprice">
           <p>total: $ <span id="total">0</span></p>
           <p>cantidad: <span id="monto">0</span></p>
-          <p>color: <i class="fa-solid fa-circle color_laptopt"></i></p>
+          <p>
+            color:
+            <i id="coloruser" class="fa-solid fa-circle color_laptop"></i>
+          </p>
         </section>
       </div>
     </div>
