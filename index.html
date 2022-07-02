@@ -20,20 +20,28 @@
         />
         <h1>Laptop Gamer AMD</h1>
         <input type="text" id="variable1" placeholder="Cantidad" />
-        <select id="variable2" aria-placeholder="colores">
+        <select id="variable2" placeholder="color">
           <option value="blue"></option>
           <option value="purple"></option>
           <option value="gold"></option>
           <option value="orange"></option>
           <option value="lightblue"></option>
         </select>
-        <select id="Precio">
-          <option value="10000"></option>
-          <option value="50000"></option>
-          <option value="100000"></option>
-          <option value="120000"></option>
-          <option value="150000"></option>
+        <select id="price">
+          <option value="10000">Price: 10000</option>
+          <option value="50000">Price: 50000</option>
+          <option value="100000">Price: 100000</option>
+          <option value="120000">Price: 120000</option>
+          <option value="150000">Price: 150000</option>
         </select>
+        <div>
+          <button id="get-total">calcular total</button>
+        </div>
+        <section id="totalprice">
+          <p>total: $ <span id="total">0</span></p>
+          <p>cantidad: <span id="monto">0</span></p>
+          <p>color: <i class="fa-solid fa-circle color_laptopt"></i></p>
+        </section>
       </div>
     </div>
     <script src="assets/js/index.js"></script>
